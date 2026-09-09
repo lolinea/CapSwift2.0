@@ -1,0 +1,78 @@
+{
+    "0" : {
+        "codePrefix" :"let arrayOfGuests: [String] = [\"Jacob\", \"Daniel\", \"Megan\", \"Evan\", \"Tony\"]",
+        "answerPossibilities" : ["arrayOfGuests", ".contains(\"Piffy\")", ".count", ".append(\"Piffy\")", ".insert(\"Piffy\", at: 2)", ".remove(\"Piffy\")"],
+        "solutionCount" : 2,
+        "solution" : "arrayOfGuests.count",
+        "solutionWords" : "Alright, now I know there are 5 people waiting",
+        "solutionPossibilities" : {
+            "arrayOfGuests.contains(\"Piffy\")" : "I haven't made reservations yet",
+            "arrayOfGuests.append(\"Piffy\")" : "I don't want to make a reservations yet",
+            "arrayOfGuests.insert(\"Piffy\", at: 2)" : "I don't want to cut lines",
+            "arrayOfGuests.remove(\"Piffy\")" : "I'm not in the reservations array"
+        },
+        "showGuide" : true,
+        "quest" : "Find out how many guests are inside arrayOfGuests!"
+    },
+    "1" : {
+        "codePrefix" :"var arrayOfGuests: [String] = [\"Jacob\", \"Daniel\", \"Megan\", \"Evan\", \"Tony\"]",
+        "answerPossibilities" : ["arrayOfGuests", ".contains", ".append", ".insert", ".remove", "(\"Piffy\")", "(\"Piffy\", at: 2)"],
+        "solutionCount" : 3,
+        "solution" : "arrayOfGuests.append(\"Piffy\")",
+        "solutionWords" : "Yay, I'm in the reservations now",
+        "solutionPossibilities" : {
+            "arrayOfGuests.contains(\"Piffy\")" : "I haven't made reservations yet",
+            "arrayOfGuests.contains(\"Piffy\", at: 2)" : "Error! There's an extra argument \"at\"",
+            "arrayOfGuests.insert(\"Piffy\")" : "Error! Missing an extra argument \"at\"",
+            "arrayOfGuests.insert(\"Piffy\", at: 2)" : "I don't want to cut lines",
+            "arrayOfGuests.remove(\"Piffy\")" : "Error! I need an index",
+            "arrayOfGuests.remove(\"Piffy\", at: 2)" : "Error! There's an extra argument \"Piffy\"",
+            "arrayOfGuests.append(\"Piffy\", at: 2)" : "Error! There's an extra argument \"at\""
+        },
+        "showGuide" : true,
+        "quest" : "Add Piffy to arrayOfGuests!"
+    },
+    "2" : {
+        "codePrefix": "let ordersReadyToPickUp: [String] = [\"A894\", \"B321\", \"C556\", \"B322\", \"A895\", \"B323\", \"C557\"]",
+        "answerPossibilities" : ["ordersReadyToPickUp", ".contains", ".append", ".insert", ".remove", "(\"B327\")", "(\"B327\", at: 5)"],
+        "solutionCount" : 3,
+        "solution" : "ordersReadyToPickUp.contains(\"B327\")",
+        "solutionWords" : "Alright, my order is not ready to be picked up.",
+        "solutionPossibilities" : {
+            "ordersReadyToPickUp.contains(\"B327\", at: 5)" : "Error! There's an extra argument \"at\"",
+            "ordersReadyToPickUp.append(\"B327\")" : "I can't add a value!",
+            "ordersReadyToPickUp.append(\"B327\", at: 2)" : "Error! There's an extra argument \"at\"",
+            "ordersReadyToPickUp.insert(\"B327\")" : "Error! Missing an extra argument \"at\"",
+            "ordersReadyToPickUp.insert(\"B327\", at: 2)" : "I can't add a value!",
+            "ordersReadyToPickUp.remove(\"B327\")" : "Error! I need an index",
+            "ordersReadyToPickUp.remove(\"B327\", at: 2)" : "Error! There's an extra argument \"B327\""
+        },
+        "showGuide" : false,
+        "quest" : "Check if Piffy's Order with ID B327 is ready!"
+    },
+    "3" : {
+        "codePrefix": "var peopleArrived = [\"Kevin\", \"Chris\", \"Megan\", \"Daniel\", \"Bob\", \"Jacob\", \"Evan\"]",
+        "answerPossibilities" : ["peopleArrived", ".contains", ".append", ".remove", "(\"Jacob\")", "(\"Daniel\", at: 2)", "(\"Kevin\")", "(\"Chris\", at: 4)"],
+        "solutionCount" : 3,
+        "solution" : "peopleArrived.contains(\"Jacob\")",
+        "solutionWords" : "Yay! Jacob has arrived",
+        "solutionPossibilities" : {
+            "peopleArrived.contains(\"Daniel\", at: 2)" : "Error! There's an extra argument \"at\"",
+            "peopleArrived.append(\"Daniel\", at: 2)" : "I don't want to add Daniel again!",
+            "peopleArrived.remove(\"Daniel\", at: 2)" : "Error! There's an extra argument \"Daniel\"",
+            
+            "peopleArrived.contains(\"Chris\", at: 4)" : "Error! There's an extra argument \"at\"",
+            "peopleArrived.append(\"Chris\", at: 4)" : "I don't want to add Chris again!",
+            "peopleArrived.remove(\"Chris\", at: 4)" : "Error! There's an extra argument \"Chris\"",
+            
+            "peopleArrived.contains(\"Kevin\")" : "I'm looking for Jacob, not Kevin",
+            "peopleArrived.append(\"Kevin\")" : "Error! Missing an extra argument \"at\"",
+            "peopleArrived.remove(\"Kevin\")" : "Error! I need an index",
+            
+            "peopleArrived.append(\"Jacob\")" : "Error! Missing an extra argument \"at\"",
+            "peopleArrived.remove(\"Jacob\")" : "Error! I need an index"
+        },
+        "showGuide" : false,
+        "quest" : "Check if Jacob has arrived!"
+    }
+}

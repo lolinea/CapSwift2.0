@@ -1,0 +1,32 @@
+{
+    "0" : {
+        "mods" : ".append",
+        "desc" : "- Adds an item to the end of a array",
+        "ex" : "shoppingArray.append(\"Strawberry\")"
+    },
+    "1" : {
+        "mods" : ".count",
+        "desc" : "- Gets the total number of items",
+        "ex" : "shoppingArray.count"
+    },
+    "2" : {
+        "mods" : ".insert",
+        "desc" : "- Inserts an item at certain index",
+        "ex" : "shoppingArray.insert(\"Chocolate\", at: 3)"
+    },
+    "3" : {
+        "mods" : ".remove",
+        "desc" : "- Removes an item at certain index",
+        "ex" : "shoppingArray.remove(at: 2)"
+    },
+    "4" : {
+        "mods" : ".isEmpty",
+        "desc" : "- Checks if the array is empty",
+        "ex" : "shoppingArray.isEmpty"
+    },
+    "5" : {
+        "mods" : ".contains",
+        "desc" : "- Checks if a value is in the array",
+        "ex" : "shoppingArray.contains(\"Banana\")"
+    }
+}

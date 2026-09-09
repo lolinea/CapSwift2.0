@@ -1,0 +1,193 @@
+{
+    "0" : {
+        "codePrefix" :"let arrayOfGuests: [String] = [\"Shanon\", \"Daniel\", \"Megan\", \"Evan\", \"Tony\"]",
+        "answerPossibilities" : ["arrayOfGuests", ".contains(\"Piffy\")", ".count", ".append(\"Piffy\")", ".insert(\"Piffy\", at: 2)", ".remove(\"Piffy\")"],
+        "showGuide" : true,
+        "quest" : "Find out how many guests are inside arrayOfGuests!",
+        "solution" : {
+            "count" : 2,
+            "initImage" : "Level1",
+            "correct" : {
+                "answer" : "arrayOfGuests.count",
+                "words" : "Alright, now I know there are 5 people waiting",
+                "image" : "Level1Success",
+                "imageWrong" : "LevelError"
+            },
+            "possibilities" : {
+                "arrayOfGuests.contains(\"Piffy\")" : {
+                    "image" : "LevelContains",
+                    "respond" : "I haven't made reservations yet"
+                },
+                "arrayOfGuests.append(\"Piffy\")" : {
+                    "image" : "Level1Append",
+                    "respond" : "I don't want to make a reservations yet"
+                },
+                "arrayOfGuests.insert(\"Piffy\", at: 2)" : {
+                    "image" : "LevelCutLines",
+                    "respond" : "I don't want to cut lines"
+                },
+                "arrayOfGuests.remove(\"Piffy\")" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! .remove needs an index!"
+                }
+            }
+        }
+    },
+    "1" : {
+        "codePrefix" :"var arrayOfGuests: [String] = [\"Shanon\", \"Daniel\", \"Megan\", \"Evan\", \"Tony\"]",
+        "answerPossibilities" : ["arrayOfGuests", ".contains", ".append", ".insert", ".remove", "(\"Piffy\")", "(\"Piffy\", at: 2)"],
+        "showGuide" : true,
+        "quest" : "Add Piffy to arrayOfGuests!",
+        "solution" : {
+            "count" : 3,
+            "initImage" : "Level2",
+            "correct" : {
+                "answer" : "arrayOfGuests.append(\"Piffy\")",
+                "words" : "Yay, I'm in the reservations now",
+                "image" : "Level2Success",
+                "imageWrong" : "LevelError"
+            },
+            "possibilities" : {
+                "arrayOfGuests.contains(\"Piffy\")" : {
+                    "image" : "LevelContains",
+                    "respond" : "I haven't made reservations yet"
+                },
+                "arrayOfGuests.contains(\"Piffy\", at: 2)" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! There's an extra argument \"at\""
+                },
+                "arrayOfGuests.append(\"Piffy\", at: 2)" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! There's an extra argument \"at\""
+                },
+                "arrayOfGuests.insert(\"Piffy\")" : {
+                    "image" : "LevelError",
+                    "respond" :  "Error! Missing an extra argument \"at\""
+                },
+                "arrayOfGuests.insert(\"Piffy\", at: 2)" : {
+                    "image" : "LevelCutLines",
+                    "respond" : "I don't want to cut lines"
+                },
+                "arrayOfGuests.remove(\"Piffy\")" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! .remove needs an index!"
+                },
+                "arrayOfGuests.remove(\"Piffy\", at: 2)" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! There's an extra argument \"Piffy\""
+                }
+            }
+        }
+    },
+    "2" : {
+        "codePrefix" : "let ordersReadyToPickUp: [String] = [\"A894\", \"B321\", \"C556\", \"B322\", \"A895\", \"B323\", \"C557\"]",
+        "answerPossibilities" : ["ordersReadyToPickUp", ".contains", ".append", ".insert", ".remove", "(\"B327\")", "(\"B327\", at: 5)"],
+        "showGuide" : false,
+        "quest" : "Check if Piffy's Order with ID B327 is ready!",
+        "solution" : {
+            "count" : 3,
+            "initImage" : "Level3",
+            "correct" : {
+                "answer" : "ordersReadyToPickUp.contains(\"B327\")",
+                "words" : "Alright, my order is not ready to be picked up.",
+                "image" : "Level3Success",
+                "imageWrong" : "LevelError"
+            },
+            "possibilities" : {
+                "ordersReadyToPickUp.contains(\"B327\", at: 5)" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! There's an extra argument \"at\""
+                },
+                "ordersReadyToPickUp.append(\"B327\")" : {
+                    "image" : "Level3",
+                    "respond" : "I can't add a value!"
+                },
+                "ordersReadyToPickUp.append(\"B327\", at: 5)" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! There's an extra argument \"at\""
+                },
+                "ordersReadyToPickUp.insert(\"B327\")" : {
+                    "image" : "LevelError",
+                    "respond" :  "Error! Missing an extra argument \"at\""
+                },
+                "ordersReadyToPickUp.insert(\"B327\", at: 5)" : {
+                    "image" : "Level3",
+                    "respond" :  "I can't add a value!"
+                },
+                "ordersReadyToPickUp.remove(\"B327\")" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! .remove needs an index!"
+                },
+                "ordersReadyToPickUp.remove(\"B327\", at: 5)" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! There's an extra argument \"B327\""
+                }
+            }
+        }
+    },
+    "3" : {
+        "codePrefix" : "var peopleArrived = [\"Kevin\", \"Chris\", \"Megan\", \"Bob\", \"Shanon\", \"Daniel\", \"Evan\"]",
+        "answerPossibilities" : ["peopleArrived", ".contains", ".append", ".remove", "(\"Shanon\")", "(\"Daniel\", at: 5)", "(\"Kevin\")", "(\"Chris\", at: 5)"],
+        "showGuide" : false,
+        "quest" : "Check if Shanon has arrived!",
+        "solution" : {
+            "count" : 3,
+            "initImage" : "Level4",
+            "correct" : {
+                "answer" : "peopleArrived.contains(\"Shanon\")",
+                "words" : "Yay! Shanon has arrived",
+                "image" : "Level4Success",
+                "imageWrong" : "LevelError"
+            },
+            "possibilities" : {
+                "peopleArrived.contains(\"Daniel\", at: 5)" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! There's an extra argument \"at\""
+                },
+                "peopleArrived.append(\"Daniel\", at: 5)" : {
+                    "image" : "Level4Daniel",
+                    "respond" : "I don't want to add Daniel again!"
+                },
+                "peopleArrived.remove(\"Daniel\", at: 5)" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! There's an extra argument \"Daniel\""
+                },
+                
+                "peopleArrived.contains(\"Chris\", at: 5)" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! There's an extra argument \"at\""
+                },
+                "peopleArrived.append(\"Chris\", at: 5)" : {
+                    "image" : "Level4Chris",
+                    "respond" : "I don't want to add Chris again!"
+                },
+                "peopleArrived.remove(\"Chris\", at: 5)" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! There's an extra argument \"Daniel\""
+                },
+                
+                "peopleArrived.contains(\"Kevin\")" : {
+                    "image" : "Level4Kevin",
+                    "respond" : "I'm looking for Shanon, not Kevin"
+                },
+                "peopleArrived.append(\"Kevin\")" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! Missing an extra argument \"at\""
+                },
+                "peopleArrived.remove(\"Kevin\")" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! .remove needs an index!"
+                },
+                
+                "peopleArrived.append(\"Shanon\")" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! Missing an extra argument \"at\""
+                },
+                "peopleArrived.remove(\"Shanon\")" : {
+                    "image" : "LevelError",
+                    "respond" : "Error! .remove needs an index!"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "4" : {
+        "codes" : {
+            "codePrefix": "let listOfGuests: [String] = [\"Jacob\", \"Daniel\", \"Megan\", \"Evan\", \"Tony\"]",
+            "codeSuffix": "print(\"There are \\(numberOfGuests) people waiting ahead.\")",
+            "codeTeaser": "let numberOfGuests ="
+        },
+        "answers" : {
+            "removePrefix" : ["let numberOfGuests =", "let numberOfGuests=", "var numberOfGuests =", "var numberOfGuests="],
+            "solution" : ["listOfGuests.count"],
+            "result" : {
+                "true" :  "✅ There are 5 people waiting ahead.",
+                "false" : "❌ Wrong Answer! Check your modifiers and try again."
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "0" : {
+        "header" : "Level 1. How Many Guests?",
+        "instruction": "Piffy is heading to a new Restaurant. He saw there's a line outside and wonders how many people are waiting to try the restaurant too. Can you help him find out how long is the reservations array?",
+        "type" : "block"
+    },
+    "1" : {
+        "header" : "Level 2. Making Reservations",
+        "instruction": "Piffy now knows he only has to wait for 5 people. Therefore, he wants to add his name to the reservations array. Help Piffy add his name to the reservations!",
+        "type" : "block"
+    },
+    "2" : {
+        "header": "Level 3. Picking Up Orders",
+        "instruction": "Piffy bought a snack while waiting for his reservations. He has been waiting for 10 minutes and wonder if his order is ready to pick up. Check whether the order with ID B327 is ready to be picked up.",
+        "type": "block"
+    },
+    "3" : {
+        "header": "Level 4. Arriving Guests",
+        "instruction": "Cia is holding a party. She invited several of her friends and some of her close friends. Cia wants to know if Shanon has arrived. Help her check!",
+        "type": "block"
+    },
+    "4" : {
+        "header" : "Level 5. How Many Guests?",
+        "instruction": "Piffy is heading to a new Restaurant. He saw there's a line outside and wonders how many people are waiting to try the restaurant too. Can you help him find out how long is the reservations array?",
+        "type" : "fill"
+    }
+}

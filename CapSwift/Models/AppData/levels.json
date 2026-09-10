@@ -18,10 +18,5 @@
         "header": "Level 4. Arriving Guests",
         "instruction": "Cia is holding a party. She invited several of her friends and some of her close friends. Cia wants to know if Shanon has arrived. Help her check!",
         "type": "block"
-    },
-    "4" : {
-        "header" : "Level 5. How Many Guests?",
-        "instruction": "Piffy is heading to a new Restaurant. He saw there's a line outside and wonders how many people are waiting to try the restaurant too. Can you help him find out how long is the reservations array?",
-        "type" : "fill"
     }
 }
